@@ -1,0 +1,42 @@
+# Site settings
+title: Change me to your title
+description: "Please give me a nice description."
+keywords: "Give me some keywords separated by comma"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+permalink: pretty
+
+author: A. Camariana
+type: website
+image: /assets/images/site-image.jpg
+
+# Markdown Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+
+# Sass Settings
+sass:
+  add_charset: true
+  sass_dir: _sass
+  style: :compressed
+
+# Collections Settings
+collections_dir: my-collections
+collections:
+  samplecollection:
+    output: true
+
+
+# Build Settings
+exclude:
+  - package.json
+  - README.md
+  - CNAME
+  - public/sass
+  - Gemfile
+  - Gemfile.lock
+  - Guardfile
+  - LICENSE
